@@ -45,13 +45,13 @@ a {
 
 .btn {
 	display: inline-block;
-	margin-top: 100px; 
-	margin-left: 25px;
+	margin-top: 95px; 
+	margin-left: 15px;
 	font-size: 1.2em;
 	font-weight: 700;
 	padding: 0.1em 0.4em;
 	text-align: center;
-	font-family: "Indie Flower", serif;
+	font-family: "arial", serif;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
 	transition: color 0.3s;

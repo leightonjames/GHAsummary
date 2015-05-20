@@ -53,9 +53,9 @@ $(document).ready(function(){
 				$(this).css('background-position', 'center '+$(window).scrollTop()/2+'px');
 			}else{
 				var Yposition=(($(window).scrollTop()+$(window).height()-$(this).attr('yPos'))/2+$(this).height());
-				if(Yposition<=900){
+				if(Yposition<=950){
 					console.log(Yposition);
-					$(this).css('background-position', 'center '+(($(window).scrollTop()+$(window).height()-$(this).attr('yPos'))/2+$(this).height())+'px');	
+					$(this).css('background-position', 'center '+(($(window).scrollTop()+$(window).height()-$(this).attr('yPos'))/5+$(this).height())+'px');	
 				};
 			}
 		});

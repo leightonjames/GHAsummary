@@ -263,7 +263,7 @@ html, body {
 	/*background-color: rgba(255,255,255,0.85);*/
 	position: absolute;
 	z-index: 75;
-	left: 6px;
+	left: 0px;
 	top: 3371px;
 }
 .clear{clear: both;}
@@ -350,7 +350,7 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 	padding: 11px 25px 11px;
 	cursor: pointer;
-	border: 2px solid #4cddf3;
+	border: 2px solid #ff993d;
 	border-radius: 2px;
 	letter-spacing: 2px;
 	pointer-events: auto;
@@ -810,17 +810,17 @@ html, body {
 	background-image: url(../img/parallax/parallax-01.jpg);
 	background-repeat:repeat-y;}
 }
-.p-image-first{margin-left: -500px;}
-.p-image-second{margin-left: -448px;}
-.parallax.p-one{height: 580px; background-repeat:repeat-y;}
-.parallax.p-two{height: 580px; background-repeat:repeat-y;}
-.parallax.p-three{height: 580px; background-repeat:repeat-y;}
-.parallax.p-four{height: 580px; background-repeat:repeat-y;}
-.parallax.p-five{height: 580px; background-repeat:repeat-y;}
-.parallax.p-six{height: 580px;}
-.parallax.p-seven{height: 580px;}
-.parallax.p-eight{height: 580px;}
-.parallax.p-nine{height: 580px;}
+.p-image-first{margin-left: -500px; background-color:#ffdd30}
+.p-image-second{margin-left: -448px; background-color:#ffdd30}
+.parallax.p-one{height: 680px; background-color:#ffdd30}
+.parallax.p-two{height: 680px; background-color:#ffdd30}
+.parallax.p-three{height: 680px; background-color:#ff993d}
+.parallax.p-four{height: 680px; background-color:#40c0bb}
+.parallax.p-five{height: 680px; background-color:#c1d72f}
+.parallax.p-six{height: 680px; background-color:#ffdd30}
+.parallax.p-seven{height: 680px; background-color:#ff993d}
+.parallax.p-eight{height: 680px; background-color:#40c0bb}
+.parallax.p-nine{height: 680px; background-color:#c1d72f}
 .p-one{background-image: url("../img/parallax/parallax-01.jpg")}
 .p-two{background-image: url("../img/parallax/parallax-02.png"); background-color: #4cddf3;}
 .p-three{background-image: url("../img/parallax/parallax-03.png")}
@@ -860,7 +860,7 @@ html, body {
 .spacer{
 	width: 100px;
 	height: 2px;
-	background: #4cddf3;
+	background: #ff993d;
 	margin: auto;
 }
 .p-image-01{position: absolute; bottom: -3px; left: 50%; margin-left: -595px;}
@@ -1292,7 +1292,7 @@ html, body {
 	font-size: 22px;
 }
 .sl-element {
-	width: 236px;
+	width: 130px;
 	height: auto;
 	float: left;
 	text-align: center;
@@ -1311,7 +1311,7 @@ html, body {
 	background-image: url("../img/sl-icons.png");
 	width: 110px;
 	height: 110px;
-	background-color: #4cddf3;
+	background-color: #ff993d;
 	cursor: pointer;
 	border-radius: 50%;
 	margin: 10px auto 30px;
@@ -1329,7 +1329,11 @@ html, body {
 .sl-globe{background-position: -110px 0;}
 .sl-diamond{background-position: -220px 0;}
 .sl-pointer{background-position: -330px 0;}
-.sl-clock{background-position: -440px 0;}
+.sl-clock{background-position: -446px 0;}
+.sl-six{background-position: -1px -112px;}
+.sl-seven{background-position: -113px -113px;}
+.sl-eight{background-position: -218px -113px;}
+.sl-nine{background-position: -331px -113px;}
 
 /* Skills */
 .skill-1 .skill-in{width: 0%;} 
@@ -1430,7 +1434,14 @@ html, body {
 	width: 205px;
 	margin: 20px auto 20px;
 }
-
+#demo {
+				width:349px;
+				height:777px;
+				margin-bottom:500px
+				position:absolute;
+				left:50%;
+				margin:80px 0 0 -175px;
+			}
 .w-arrows.last{ margin: 120px auto 150px;}
 
 .ch-item{float: left; width: 100%; cursor: pointer;}
@@ -2114,27 +2125,6 @@ html, body {
 			padding: 1.25em; /* 20 */
 			padding-top: 0;
 		}
-}
-
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    /*padding-top: 30px;*/ height: 0; overflow: hidden;
-}
- 
-.video-container iframe,
-.video-container object,
-.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-/* See more at: http://avexdesigns.com/responsive-youtube-embed/#sthash.xRJhxXBs.dpuf*/
-
-
 .pattern{ background-image:url("../img/slider/pattern.jpg");}
 .darker .sticky-wrapper{ background-color:#000;}
 

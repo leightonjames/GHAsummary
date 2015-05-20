@@ -1,0 +1,26 @@
+
+
+			.bloc {
+				color: #f9f9f9;
+				padding: 1px 0 30px;
+				border-color: #f9f9f9;
+				clear: both;
+			}
+			.bloc buttonsvg {
+				border: 1px solid #f9f9f9;
+				color: #f9f9f9;
+			}
+
+			/* Colors */
+			.bloc-head { background: #5aa8c5; padding: 30px; }
+			.bloc-anim { background: #2e2e2e; }
+			.bloc-documentation { background: #d36281; }
+			.bloc-example { background: #4fe084; }
+
+			/* Custom */
+			#hi-there {
+				width: 100%;
+				background-color:#ba0c2f;
+								
+			}
+			
