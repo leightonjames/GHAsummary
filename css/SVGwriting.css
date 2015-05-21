@@ -12,7 +12,7 @@
 			}
 
 			/* Colors */
-			.bloc-head { background: #5aa8c5; padding: 30px; }
+			.bloc-head { padding-bottom: 300px}
 			.bloc-anim { background: #2e2e2e; }
 			.bloc-documentation { background: #d36281; }
 			.bloc-example { background: #4fe084; }
