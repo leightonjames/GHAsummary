@@ -764,12 +764,17 @@ html, body {
 	position: relative;
 	margin: auto;
 }
+.full2{
+	width: 1015px;
+	position: relative;
+	margin: auto;
+}
 .half{
 	width: 500px;
 	float: left;
-	padding: 80px 55px 70px 35px;
+	padding: 0px 0px 0px 0px;
 }
-.half:last-child{padding: 80px 35px 0px 55px;}
+.half:last-child{padding: 0px 0px 0px 0px;}
 .half.car-show-2 {
 	padding-bottom: 25px;
 }
