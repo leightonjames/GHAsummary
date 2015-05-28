@@ -292,14 +292,14 @@ html, body {
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;*/
 }.menu a:hover{
-	color: #4cddf3;
+	color: #ff9731;
 	
 /*	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;*/
 }
-#nav .current a {color: #4cddf3 !important;}
+#nav .current a {color: #ff9731 !important;}
 .logo{
 	float: left;
 	color: #000;
@@ -627,7 +627,7 @@ html, body {
 	text-align: center;
 }
 
-.content{position: relative;}
+.content{position: relative; background-color:#ff993d}
 .dark{background: #f7f7f7; padding-bottom: 85px;}
 /*.menu-top{margin-top: 75px;}*/
 .f-single{
@@ -699,7 +699,7 @@ html, body {
 	font-weight: 400;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	background: #4cddf3;
+	background: #ff9731;
 	border-radius: 25px;
 	padding: 13px 25px 13px;
 	letter-spacing: 1px;
@@ -772,7 +772,7 @@ html, body {
 .half{
 	width: 500px;
 	float: left;
-	padding: 0px 0px 0px 0px;
+	padding: 0px 0px 70px 0px;
 }
 .half:last-child{padding: 0px 0px 0px 0px;}
 .half.car-show-2 {
@@ -793,7 +793,7 @@ html, body {
 	font-size: 28px;
 	color: #434343;
 	padding-bottom: 50px;
-	margin-top: 10px;
+	margin-top: 70px;
 }
 .title-full-one{padding-top: 80px;}
 .half-content{
@@ -1813,10 +1813,10 @@ html, body {
 	border-radius: 50%;
 	opacity: 0.8;
 	position: fixed;
-	bottom: 50px;
+	bottom: 40px;
 	right: 40px;
 	display: none;
-	background: /*url('img/scroll-up.png') no-repeat*/ #4ad8ed;
+	background: /*url('img/scroll-up.png') no-repeat*/ #000;
 	color: #fff;
 	line-height: 55px;
 	text-decoration: none;
@@ -2161,3 +2161,4 @@ body .bx-wrapper{ margin-bottom:0;}
 body .bx-wrapper .bx-viewport{ border:0px; left:0;}
 
 .bx-wrapper .bx-controls-direction a.bx-next{background: transparent url("../img/s-next.png"); width:81px; height:80px; margin-right:70px; opacity:0.3}
+

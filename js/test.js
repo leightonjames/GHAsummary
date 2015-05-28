@@ -431,18 +431,6 @@ $(document).ready(function(){
 	
 	/* Inview */
 	function loadInview(){
-		/* Parallax */
-		$('.parallax').bind('inview', function (event, visible) {
-			if (visible === true) {
-			// element is now visible in the viewport
-			var offset = $(this).offset();
-			$(this).addClass('paraOn').attr('yPos',offset.top);
-			} else {
-			// element has gone out of viewport
-			$(this).removeClass('paraOn');
-			}
-		});
-		
 		/* Fade In Elements */
 		$('.hideme').bind('inview', function (event, visible) {
 			if (visible === true) {
