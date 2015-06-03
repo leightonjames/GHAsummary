@@ -362,4 +362,186 @@ textarea {
 .chart path:hover { opacity: 0.65; }
 .parallax-container {
 	width:100%;
-	height: 700px;
+	height:100%;
+}
+#canvas_container {
+                width: 500px;
+				height: 500px;
+                margin: 0 auto;
+            }
+#overlay {
+    position: relative;
+    left: 0px;
+    top: 50px;
+    z-index: 50;
+}
+.canvas {
+  -webkit-perspective: 1000;
+          perspective: 1000;
+		  padding-bottom: 250px;
+}
+
+.box {
+  position: relative;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  height: 100px;
+  width: 100px;
+  -webkit-transform: rotate3d(1, 0, 0, 45deg) translate3d(0, 200%, 0);
+          transform: rotate3d(1, 0, 0, 45deg) translate3d(0, 200%, 0);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  text-align: center;
+  font-size: 33.33333px;
+  line-height: 3;
+  background-color: #dfcea9;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.box .latch,
+.box .bottom,
+.box .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-transition: -webkit-transform 250ms linear;
+          transition: transform 250ms linear;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  background-color: inherit;
+  border-color: inherit;
+}
+.box .latch {
+  height: 50%;
+  top: inherit;
+  left: inherit;
+  bottom: inherit;
+  right: inherit;
+  -webkit-transform-origin: inherit;
+      -ms-transform-origin: inherit;
+          transform-origin: inherit;
+}
+.box .target,
+.box .all {
+  display: block;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-color: inherit;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Impact, Haettenschweiler sans-serif;
+  background-image: -webkit-linear-gradient(right, transparent, transparent 50%, rgba(0, 0, 0, 0.1) 50%, transparent);
+  background-image: linear-gradient(to left, transparent, transparent 50%, rgba(0, 0, 0, 0.1) 50%, transparent);
+  background-size: 4px 4px;
+}
+.box .target:hover,
+.box .all:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 0;
+}
+.box .target:focus,
+.box .all:focus {
+  background: #fe4466;
+  outline: 0;
+}
+.box .right .latch .target,
+.box .left .latch .target {
+  background-image: -webkit-linear-gradient(bottom, transparent, transparent 50%, rgba(0, 0, 0, 0.1) 50%, transparent);
+  background-image: linear-gradient(to top, transparent, transparent 50%, rgba(0, 0, 0, 0.1) 50%, transparent);
+}
+.box .back {
+  bottom: 100%;
+  top: auto;
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.box .back.folded,
+.box .back .latch.folded {
+  -webkit-transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 0);
+          transform: rotate3d(1, 0, 0, -90deg) translate3d(0, 0, 0);
+}
+.box .back .latch {
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+}
+.box .front {
+  top: 100%;
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.box .front > .target {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.box .front.folded,
+.box .front .latch.folded {
+  -webkit-transform: rotate3d(1, 0, 0, 90deg) translate3d(0, 0, 0);
+          transform: rotate3d(1, 0, 0, 90deg) translate3d(0, 0, 0);
+}
+.box .front .latch {
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+}
+.box .left {
+  right: 100%;
+  left: auto;
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.box .left > .target {
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+.box .left.folded,
+.box .left .latch.folded {
+  -webkit-transform: rotate3d(0, 1, 0, 90deg) translate3d(0, 0, 0);
+          transform: rotate3d(0, 1, 0, 90deg) translate3d(0, 0, 0);
+}
+.box .left .latch {
+  height: 100%;
+  width: 50%;
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+}
+.box .right {
+  left: 100%;
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+.box .right > .target {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+.box .right.folded,
+.box .right .latch.folded {
+  -webkit-transform: rotate3d(0, 1, 0, -90deg) translate3d(0, 0, 0);
+          transform: rotate3d(0, 1, 0, -90deg) translate3d(0, 0, 0);
+}
+.box .right .latch {
+  height: 100%;
+  width: 50%;
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+          transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 0);
+}
+/* CSS Document */
+

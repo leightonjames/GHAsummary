@@ -627,8 +627,8 @@ html, body {
 	text-align: center;
 }
 
-.content{position: relative; background-color:#ff993d}
-.dark{background: #f7f7f7; padding-bottom: 85px;}
+.content{position: relative; background-color:#fff}
+.dark{background: #FFF; padding-bottom: 55px;}
 /*.menu-top{margin-top: 75px;}*/
 .f-single{
 	width: 467px;

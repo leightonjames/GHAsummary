@@ -237,7 +237,10 @@
 	.content {width: 100%;overflow: hidden;}
 	.main-title {font-size: 30px;}
 	.welcome{ font-size:13px;}
-	.main-title span {top: 100px;}
+	.main-title span {
+	top: 100px;
+	color: #000;
+}
 	.parallax.p-one{ height:280px;}
 	.parallax.p-two {height: 255px;}
 	.parallax.p-two .spacer{ display:none;}
