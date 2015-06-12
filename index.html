@@ -136,26 +136,18 @@ Scroll down to find answers to the basic questions:   How many people are affect
  <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img\parallax\parallax-02.png" data-natural-width="1400" data-natural-height="800"></div>
     <article id="anchor2" class="content2 menu-top">
    		  <div class="full">
-   	  <section class="half car-show-1">
-                 <div data-pulse-delay="0s" class="span3 wow fadeInLeft"data-wow-offset="350" data-wow-duration="2s"><div class="howmuch hvr-bob"><img src="img/storyboard/whowastitle.jpg" style="width:100%; margin-left:auto; alt=""></div></div>
-          <div class="howmuch2"></div>
-    </section>
-	  <section class="half">
-                    <div data-pulse-delay="0s" class="span3 wow fadeInRight"data-wow-offset="350" data-wow-duration="2s"><div class="howmuch hvr-float"><img src="img/storyboard/whowas.jpg" style="width:100%; margin-left:auto; alt=""></div></div>
-          <div class="howmuch2 hvr-float"></div>
-    </section>
-            <div class="clear"></div>   
+   		  <div class="clear"></div>   
          
      <div class="graph-one"></div>
     </article>
         <article id="anchor2" class="content2 menu-top">
    		  <div class="full">
    	  <section class="half car-show-1">
-                 <div data-pulse-delay="0s" class="span3 wow fadeInLeft"data-wow-offset="350" data-wow-duration="2s"><div class="howmuch hvr-bob"><img src="img/storyboard/numberofpeopletitle.jpg" style="width:100%; margin-left:auto; alt=""></div></div>
+                 <div data-pulse-delay="0s" class="span3 wow fadeInLeft"data-wow-offset="0" data-wow-duration="2s"><div class="howmuch hvr-bob"><img src="img/storyboard/numberofpeople.jpg" style="width:100%; margin-left:auto; alt=""></div></div>
           <div class="howmuch2"></div>
     </section>
 	  <section class="half">
-                    <div data-pulse-delay="0s" class="span3 wow fadeInRight"data-wow-offset="350" data-wow-duration="2s"><div class="howmuch hvr-float"><img src="img/storyboard/numberofpeople.jpg" style="width:100%; margin-left:auto; alt=""></div></div>
+                    <div data-pulse-delay="0s" class="span3 wow fadeInRight"data-wow-offset="0" data-wow-duration="2s"><div class="howmuch hvr-float"><img src="img/storyboard/whowas.jpg" style="width:100%; margin-left:auto; alt=""></div></div>
           <div class="howmuch2 hvr-float"></div>
     </section>
             <div class="clear"></div>   
@@ -168,12 +160,12 @@ Scroll down to find answers to the basic questions:   How many people are affect
    	  <section class="half car-show-1">
                  <div class="title-two">
                  <div class="title-two">How much was given...</div>
-                     <div data-pulse-delay="0s" class="span3 wow fadeInLeft"data-wow-offset="350" data-wow-duration="2s"><div class="howmuch hvr-pop"><img src="img/storyboard/howmuch.png" style="width:100%; margin-left:auto; alt=""></div></div>
+                     <div data-pulse-delay="0s" class="span3 wow fadeInLeft"data-wow-offset="150" data-wow-duration="2s"><div class="howmuch hvr-pop"><img src="img/storyboard/howmuch.png" style="width:100%; margin-left:auto; alt=""></div></div>
           <div class="howmuch2"></div>
     </section>
 	  <section class="half">
                  <div class="title-two">...and was it enough?</div>
-                     <div data-pulse-delay="0s" class="span3 wow swing"data-wow-offset="350" data-wow-duration="6s"><div class="howmuch hvr-rotate"><img src="img/storyboard/howmuch1.png" style="width:100%; margin-left:auto; alt=""></div></div>
+                     <div data-pulse-delay="0s" class="span3 wow swing"data-wow-offset="0" data-wow-duration="15s"><div class="howmuch"><img src="img/storyboard/howmuch1.png" style="width:100%; margin-left:auto; alt=""></div></div>
           <div class="howmuch2 hvr-float"><img src="img/storyboard/howmuch2.png" style="width:100%; margin-left:auto; alt=""></div>
     </section>
             <div class="clear"></div>   
@@ -187,7 +179,7 @@ Scroll down to find answers to the basic questions:   How many people are affect
      </div>
    
     <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img\parallax\parallax-06.png" data-natural-width="1400" data-natural-height="800"></div>
-    <div class="wheredoes hvr-float" style="background-color:#43c0bb"><img src="img/storyboard/howdoesitgetthere.jpg" style="width:60%; margin-left:auto; margin-right:auto; display:block"alt=""></div>
+    <div class="wheredoes hvr-float" style="background-color:#43c0bb"><img src="img/storyboard/howdoesitgetthere.jpg" style="width:50%; margin-left:auto; margin-right:auto; display:block"alt=""></div>
     <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img\parallax\parallax-07.png" data-natural-width="1400" data-natural-height="800"></div>
     <div class="wheredoes hvr-float" style="background-color:#FFDA3A"><img src="img/storyboard/largest3.png" style="width:60%; margin-left:auto; margin-right:auto; display:block"alt=""></div>
  <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="img\parallax\parallax-08.png" data-natural-width="1400" data-natural-height="800"></div>
@@ -519,6 +511,32 @@ Scroll down to find answers to the basic questions:   How many people are affect
     <script src="js/parallax.js"></script>
     <script src="js/raphael.js"></script>
     <script src="js/box.js"></script>
+    <script src="js/smoothPageScroll.js"></script>
+    <script src="js/tweenMax.min.js"></script>
+    <script src="js/scrollToPlugin.min.js"></script>
+            <script>
+		$(function(){	
+
+        var $window = $(window);
+	var scrollTime = 1.2;
+	var scrollDistance = 170;
+
+	$window.on("mousewheel DOMMouseScroll", function(event){
+
+		event.preventDefault();	
+
+		var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+		var scrollTop = $window.scrollTop();
+		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+
+		TweenMax.to($window, scrollTime, {
+			scrollTo : { y: finalScroll, autoKill:true },
+				ease: Power1.easeOut,
+				overwrite: 5							
+			});
+
+	});
+});</script>
 <script>
  new WOW().init();
 </script>

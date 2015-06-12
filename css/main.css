@@ -362,7 +362,7 @@ textarea {
 .chart path:hover { opacity: 0.65; }
 .parallax-container {
 	width:100%;
-	height:70%;
+	height:40%;
 }
 #canvas_container {
                 width: 500px;
