@@ -39,11 +39,11 @@ html, body {
 }
 .loader {
   position: absolute;
-  width: 40px;
-  height:40px;
-  margin: -20px 0 0 -20px;
-  top:50%;
-  left:50%;
+  width: 15px;
+  height:15px;
+  margin-left: auto;
+  top:39%;
+  left:46%;
 }
 
 /* Color Picker */
@@ -627,8 +627,9 @@ html, body {
 	text-align: center;
 }
 
-.content{position: relative; background-color:#fff}
-.dark{background: #FFF; padding-bottom: 55px;}
+.content{position: relative; background-color:#FFDA3A}
+.content2{position: relative; background-color:#43c0bb}
+.dark{background: #43C0BB; padding-bottom: 55px;}
 /*.menu-top{margin-top: 75px;}*/
 .f-single{
 	width: 467px;
@@ -716,7 +717,7 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 }
 .title.one{color: #404141; font-size: 37px; letter-spacing: 5px; padding: 120px 0 30px; text-transform: uppercase;}
-.title.two{color: #757575; font-size: 17px; font-family: 'Open Sans', sans-serif; width: 680px; margin: 50px auto;}
+.title.two{color: #757575; font-size: 17px; font-family: 'Open Sans', sans-serif; width: 680px; margin: 0px auto;}
 .f-info{
 	font-weight: 400;
 	text-align: center;
@@ -748,9 +749,9 @@ html, body {
 .dark:after {
 	content: '';
 	position: absolute;
-	width: 0;
+	width: 100%;
 	height: 0;
-	border: 30px solid #f7f7f7;
+	border: 0px solid #f7f7f7;
 	border-bottom: 0px solid transparent !important;
 	border-right: 30px solid transparent !important;
 	border-left: 30px solid transparent !important;
@@ -1329,7 +1330,7 @@ html, body {
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;*/
 }.sl-ico:hover{
-	background-color: #e6e6e6 !important;
+	background-color: #a1a1a1 !important;
 }
 .sl-config{background-position: 0 0;}
 .sl-globe{background-position: -110px 0;}
@@ -1889,7 +1890,7 @@ html, body {
 }
 .social-icons{
 	width:102px;
-	margin: 0px auto 35px;
+	margin: 0px auto 8px;
 	padding-top:6px;
 }
 .socialFooter .social-icons .social{
@@ -1899,7 +1900,7 @@ html, body {
 }
 .socialFooter .social-icons .social div{
 	width: 51px;
-	height: 50px;
+	height: 51px;
 	overflow: hidden;
 	background: url("../img/social-footer.png");
 	float: left;
@@ -1911,9 +1912,9 @@ html, body {
 .socialFooter .copy{
 	text-align:center;
 	font-family: 'Open Sans', sans-serif;
-	color: #aaa;
-	font-size: 13px;
-	margin-top:0px;
+	color: #828282;
+	font-size: 10px;
+	margin-top:10px;
 }
 
 /* Jump Menu */
